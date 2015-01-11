@@ -2,12 +2,69 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>index</title>
+	<title>test</title>
 	<link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
 </head>
 <body>
-	<h1>test</h1>
-	
+	<div class="users">
+		<h2>Users CRUD</h2>
+		<p><strong>Add:</strong></p>
+		<label for="username">Username:</label>
+		<input type="text" id="username">
+		<label for="password">Password:</label>
+		<input type="password" id="password">
+		<button id="sendReq">send</button>
+
+
+		<p><strong>Delete:</strong></p>
+		<label for="delete">User ID:</label>
+		<input type="number" id="delete">
+		<button id="deleteReq">DELETE</button>
+
+
+		<p><strong>Update:</strong></p>
+		<label for="uid">User ID:</label>
+		<input type="number" id="uid">
+		<label for="uname">Username:</label>
+		<input type="text" id="uname">
+		<label for="upas">Password:</label>
+		<input type="password" id="upas">
+		<button id="updateReq">send</button>
+	</div>
+
+	<div class="users">
+		<h2>POSTS</h2>
+		<p><strong>Add:</strong></p>
+		<label for="title">title:</label>
+		<input type="text" id="title" maxlenght="100">
+		<br>
+		<br>
+		<label for="text">text:</label>
+		<textarea id="text" cols="30" rows="10" maxlenght="250"></textarea>
+		<br>
+		<label for="creator">creator_id:</label>
+		<input type="number" id="creator">
+		<br>
+		<button id="sendPostReq">send</button>
+		
+		<p><strong>Delete:</strong></p>
+		<label for="delete">Post ID:</label>
+		<input type="number" id="deletePost">
+		<button id="deletePostReq">DELETE</button>
+
+		<p><strong>Update:</strong></p>
+		<label for="pid">Post ID:</label>
+		<input type="number" id="pid">
+		<label for="ptitle">Title:</label>
+		<input type="text" id="ptitle">
+		<br>
+		<br>
+		<label for="ptext">text:</label>
+		<textarea id="ptext" cols="30" rows="10" maxlenght="250"></textarea>
+		<br>
+		<button id="updatePostReq">send</button>
+
+	</div>
 
 	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="{{ url_for('static', filename='js/app.js') }}"></script>

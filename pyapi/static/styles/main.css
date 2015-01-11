@@ -1,6 +1,16 @@
-.left {
-	width: 30%;
-	height: 500px;
-	background: #333;
-	color: green;
+table {
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+
+td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.users {
+	border: 1px solid black;
+	padding: 15px;
+	width: 800px;
 }
